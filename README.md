@@ -17,7 +17,7 @@ PHP **5.4, 7.4, 8.2, 8.3 and 8.5** run side by side, always. The legacy project 
 `mysite.test` in seconds: choose a name, a folder and a PHP version — Dunebox generates the virtual host, updates the Windows hosts file and the certificate. Aliases and multiple domains included.
 
 ### 🔒 Green HTTPS, even locally
-SSL certificate generated and **automatically trusted** by the system: your `.test` sites run over HTTPS with no browser warnings, just like in production.
+A local certificate authority, generated and **trusted automatically** — once. Every `.test` site runs over HTTPS with the green padlock and no browser warnings, in **Chrome, Edge and Firefox**. New sites are trusted instantly, no extra steps.
 
 ### 📬 Emails don't leave: you see them
 Every email sent from PHP lands in a **local inbox** ([Mailpit](http://mailpit.localhost)) with HTML preview, source and live updates. Zero configuration, zero test emails accidentally sent to real clients.
@@ -35,18 +35,20 @@ Ready-to-use credentials, created automatically on first launch:
 Point your app's `.env` at `127.0.0.1` with user `dunebox` and password `secret` and you're connected.
 
 ### ⏰ Built-in cron
-Drop a `dunebox.cron` file in your project (classic crontab syntax) and Dunebox runs your jobs — `php artisan schedule:run`, backups, whatever you need — with the project's correct PHP version. The file travels with the project in git: your teammates inherit it. And for system jobs there's the global scheduler.
+List your cron jobs in the project's `.dunebox/config.json` (classic crontab syntax) and Dunebox runs them — `php artisan schedule:run`, backups, whatever you need — with the project's correct PHP version. It travels with the project in git: your teammates inherit it. And for system-wide jobs there's the global scheduler.
 
-```cron
-* * * * *  php artisan schedule:run
-0 3 * * *  php artisan backup:run
+```json
+"cron": [
+  "* * * * *  php artisan schedule:run",
+  "0 3 * * *  php artisan backup:run"
+]
 ```
 
 ### 🖥️ One dashboard for everything
 A graphical interface with service status at a glance, host management, quick access to tools, logs one click away. It lives in the system tray: close the window and the services keep running.
 
 ### 🧰 The toolbox, one click away
-**Git, Node.js, Python, Composer and FFmpeg** install (and update) straight from Dunebox, which notifies you when a new version is out. They become global commands on your PC, available in any terminal.
+**Git, Node.js, Python, Composer and FFmpeg** install, update and uninstall straight from Dunebox, which notifies you when a new version is out. They become global commands on your PC, available in any terminal.
 
 ### 📦 Install only what you need
 Don't use Redis? Turn it off. Every component toggles on and off individually, and dependencies resolve themselves. Want a PHP version that isn't on the list? Add it with one line of configuration — no need to wait for an update.
