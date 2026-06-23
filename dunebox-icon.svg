@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="dunebox icon">
+  <defs>
+    <clipPath id="box"><rect x="0" y="0" width="120" height="120" rx="28"/></clipPath>
+  </defs>
+  <g clip-path="url(#box)">
+    <rect x="0" y="0" width="120" height="120" fill="#ffe79a"/>
+    <!-- back dune -->
+    <path d="M0 120 C 28 34, 76 36, 120 70 L120 120 Z" fill="#f6b53c"/>
+    <!-- front dune -->
+    <path d="M0 120 C 24 82, 58 66, 86 78 C 106 86, 115 108, 120 120 Z" fill="#e2860f"/>
+  </g>
+</svg>
