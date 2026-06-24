@@ -22,8 +22,8 @@ Download a zip, extract it wherever you want, open `dunebox.exe`. On first launc
 
 <p align="center">
   <a href="../../releases/latest"><strong>⬇ Download</strong></a> ·
-  <a href="https://dunebox.enesi.it/docs.html"><strong>📖 Documentation</strong></a> ·
-  <a href="https://dunebox.enesi.it"><strong>🌐 Website</strong></a>
+  <a href="https://dunebox.enesi.it/docs.html" target="_blank"><strong>📖 Documentation</strong></a> ·
+  <a href="https://dunebox.enesi.it" target="_blank"><strong>🌐 Website</strong></a>
 </p>
 
 ---
@@ -55,8 +55,6 @@ The full guide lives at **[dunebox.enesi.it/docs.html](https://dunebox.enesi.it/
 
 ## ✅ Compatibility
 
-| | |
-|---|---|
 | **OS** | Windows 10 / 11 (64-bit) |
 | **PHP** | 5.6 · 7.4 · 8.2 · 8.3 · 8.5 (all active at once) |
 | **Databases** | MySQL 9.6/8.0/5.7 · MariaDB · PostgreSQL · MongoDB · Redis (multiple at once) |
