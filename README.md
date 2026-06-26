@@ -49,6 +49,13 @@ Download a zip, extract it wherever you want, open `dunebox.exe`. On first launc
 
 Requirements: Windows 10/11 (64-bit), an internet connection on first launch (to download packages), ~2–3 GB of disk for a typical install.
 
+## 🔄 Updating
+
+A new version only replaces the two executables — your **`config\` folder and your databases are left untouched**, so your existing environment keeps working unchanged. Two steps:
+
+1. **Quit Dunebox** from the tray icon (so all services stop), then **make an emergency backup of the two current executables**: copy `dunebox.exe` (in the root) and `system\dunebox-cli.exe` to, e.g., `dunebox.exe.bak` and `system\dunebox-cli.exe.bak`. If anything goes wrong, restore those two files to roll back.
+2. Download **`dunebox.exe`** and **`dunebox-cli.exe`** from the [latest release](../../releases/latest) and **overwrite the two files in place** — `dunebox.exe` in the root, `dunebox-cli.exe` inside the `system\` folder. **Do not overwrite the `config\` folder**: keeping your current configuration is what preserves compatibility with your existing environment. Reopen `dunebox.exe`.
+
 ## 📖 Documentation
 
 The full guide lives at **[dunebox.enesi.it/docs.html](https://dunebox.enesi.it/docs.html)** — installation, hosts, multiple PHP versions, databases & credentials, email, HTTPS, Cron Jobs, the CLI, Claude integration and uninstall, all with copy-ready ports, credentials and commands.
